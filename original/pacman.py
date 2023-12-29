@@ -21,7 +21,9 @@ class Pacman(Entity):
         self.direction = LEFT
         self.setBetweenNodes(LEFT)
         self.alive = True
-
+        self.image = self.sprites.getStartImage()
+        self.sprites.reset()
+        
     def die(self):
         self.alive = False
         self.direction = STOP
